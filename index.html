@@ -1,81 +1,125 @@
+<!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Xaliphostes</title>
-    <link rel="stylesheet" href="styles.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/tailwindcss/2.2.19/tailwind.min.js"></script>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap');
+        body {
+            font-family: 'Poppins', sans-serif;
+        }
+    </style>
 </head>
+<body class="bg-gray-100">
+    <header class="bg-blue-600 text-white py-6">
+        <div class="container mx-auto px-4 text-center">
+            <h1 class="text-4xl font-bold">Xaliphostes</h1>
+            <p class="text-xl mt-2">Developer & Scientist</p>
+        </div>
+    </header>
 
-<body>
-    <div class="pheader" style="text-align:center"><h1>Xaliphostes page Under construction!</h1></div>
+    <nav class="bg-blue-500 text-white sticky top-0 z-10">
+        <div class="container mx-auto px-4 py-3">
+            <ul class="flex justify-center space-x-4">
+                <li><a href="#point-cloud" class="hover:text-blue-200">Point Cloud</a></li>
+                <li><a href="#science-math-libs" class="hover:text-blue-200">Science/Math Libs</a></li>
+                <li><a href="#science-math-apps" class="hover:text-blue-200">Science/Math Apps</a></li>
+                <li><a href="#documentation" class="hover:text-blue-200">Documentation</a></li>
+                <li><a href="#cpp-libs" class="hover:text-blue-200">C++ Libs</a></li>
+                <li><a href="#games" class="hover:text-blue-200">Games</a></li>
+                <li><a href="#gists" class="hover:text-blue-200">Gists</a></li>
+            </ul>
+        </div>
+    </nav>
 
-    <h2>Point cloud visualization</h2>
-    <ul>
-        <li><a href="https://xaliphostes.github.io/chandelle-escalette/">Chandelle - Pas de l'Escalette</a>
-        <li><a href="https://xaliphostes.github.io/petit-salon/">Petit salon</a>
-    </ul>
+    <main class="container mx-auto px-4 py-8">
+        <section id="point-cloud" class="mb-12">
+            <h2 class="text-3xl font-bold mb-4">Point Cloud Visualization</h2>
+            <ul class="list-disc pl-5">
+                <li><a href="https://xaliphostes.github.io/chandelle-escalette/" class="text-blue-600 hover:underline">Chandelle - Pas de l'Escalette</a></li>
+                <li><a href="https://xaliphostes.github.io/petit-salon/" class="text-blue-600 hover:underline">Petit salon</a></li>
+            </ul>
+        </section>
 
-    <h2>Science/Math libs (Ts or Js)</h2>
-    <ul>
-        <li><a href="https://github.com/xaliphostes/stress">Stress library</a>
-        <li><a href="https://github.com/xaliphostes/signal-slot-js">Signal/Slot à la Qt</a>
-        <li><a href="https://github.com/xaliphostes/microevent.js">microevent.js</a>
-        <li><a href="https://github.com/youwol/dataframe">dataframe</a>
-        <li><a href="https://github.com/youwol/math">math</a>
-        <li><a href="https://github.com/youwol/geometry">geometry</a>
-        <li><a href="https://github.com/youwol/geophysics">geophysics</a>
-        <li><a href="https://github.com/youwol/mechanics">mechanics</a>
-        <li><a href="https://github.com/youwol/io">io</a>
-        <li><a href="https://github.com/youwol/kepler">kepler</a>
-        <li><a href="https://github.com/youwol/vinci">vinci</a>
-        <li><a href="https://github.com/youwol/hmatrix">hmatrix</a>
-        <li><a href="https://github.com/youwol/halfedge-mesh">halfedge data structure</a>
-        <li><a href="https://github.com/youwol/pmpjs">C++ PMP lib in js</a>
-    </ul>
+        <section id="science-math-libs" class="mb-12">
+            <h2 class="text-3xl font-bold mb-4">Science/Math Libraries (Ts or Js)</h2>
+            <ul class="list-disc pl-5 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-2">
+                <li><a href="https://github.com/xaliphostes/stress" class="text-blue-600 hover:underline">Stress library</a></li>
+                <li><a href="https://github.com/xaliphostes/signal-slot-js" class="text-blue-600 hover:underline">Signal/Slot à la Qt</a></li>
+                <li><a href="https://github.com/xaliphostes/microevent.js" class="text-blue-600 hover:underline">microevent.js</a></li>
+                <li><a href="https://github.com/youwol/dataframe" class="text-blue-600 hover:underline">dataframe</a></li>
+                <li><a href="https://github.com/youwol/math" class="text-blue-600 hover:underline">math</a></li>
+                <li><a href="https://github.com/youwol/geometry" class="text-blue-600 hover:underline">geometry</a></li>
+                <li><a href="https://github.com/youwol/geophysics" class="text-blue-600 hover:underline">geophysics</a></li>
+                <li><a href="https://github.com/youwol/mechanics" class="text-blue-600 hover:underline">mechanics</a></li>
+                <li><a href="https://github.com/youwol/io" class="text-blue-600 hover:underline">io</a></li>
+                <li><a href="https://github.com/youwol/kepler" class="text-blue-600 hover:underline">kepler</a></li>
+                <li><a href="https://github.com/youwol/vinci" class="text-blue-600 hover:underline">vinci</a></li>
+                <li><a href="https://github.com/youwol/hmatrix" class="text-blue-600 hover:underline">hmatrix</a></li>
+                <li><a href="https://github.com/youwol/halfedge-mesh" class="text-blue-600 hover:underline">halfedge data structure</a></li>
+                <li><a href="https://github.com/youwol/pmpjs" class="text-blue-600 hover:underline">C++ PMP lib in js</a></li>
+            </ul>
+        </section>
 
-    <h2>Science/Math apps (Ts or Js)</h2>
-    <ul>
-        <li><a href="https://xaliphostes.github.io/rose-diagram/">Rose diagram</a>
-        <li><a href="https://xaliphostes.github.io/arch-app/">Arch webapp (geomeca)</a>
-        <li><a href="https://xaliphostes.github.io/tecto-stress/">Tecto Stress (stress inversion)</a>
-        <li><a href="https://xaliphostes.github.io/course-harmonic-diffusion/">Harnomic diffusion</a>
-        <li><a href="https://xaliphostes.github.io/course-heat-diffusion/">Constrained heat diffusion</a>
-        <li><a href="https://xaliphostes.github.io/course-01/">Symbolic derivatives</a>
-    </ul>
+        <section id="science-math-apps" class="mb-12">
+            <h2 class="text-3xl font-bold mb-4">Science/Math Applications (Ts or Js)</h2>
+            <ul class="list-disc pl-5">
+                <li><a href="https://xaliphostes.github.io/rose-diagram/" class="text-blue-600 hover:underline">Rose diagram</a></li>
+                <li><a href="https://xaliphostes.github.io/arch-app/" class="text-blue-600 hover:underline">Arch webapp (geomeca)</a></li>
+                <li><a href="https://xaliphostes.github.io/tecto-stress/" class="text-blue-600 hover:underline">Tecto Stress (stress inversion)</a></li>
+                <li><a href="https://xaliphostes.github.io/course-harmonic-diffusion/" class="text-blue-600 hover:underline">Harmonic diffusion</a></li>
+                <li><a href="https://xaliphostes.github.io/course-heat-diffusion/" class="text-blue-600 hover:underline">Constrained heat diffusion</a></li>
+                <li><a href="https://xaliphostes.github.io/course-01/" class="text-blue-600 hover:underline">Symbolic derivatives</a></li>
+            </ul>
+        </section>
 
-    <h2>Doc</h2>
-    <ul>
-        <li><a href="https://github.com/youwol/arch-doc">Arch (3D Boundary Element Method)</a>
-        <li><a href="https://github.com/youwol/cassini-doc">Cassini (2D/3D Finite Element Method)</a>
-    </ul>
+        <section id="documentation" class="mb-12">
+            <h2 class="text-3xl font-bold mb-4">Documentation</h2>
+            <ul class="list-disc pl-5">
+                <li><a href="https://github.com/youwol/arch-doc" class="text-blue-600 hover:underline">Arch (3D Boundary Element Method)</a></li>
+                <li><a href="https://github.com/youwol/cassini-doc" class="text-blue-600 hover:underline">Cassini (2D/3D Finite Element Method)</a></li>
+            </ul>
+        </section>
 
-    <h2>Libs in C++</h2>
-    <ul>
-        <li><a href="https://github.com/xaliphostes/dataframe">Dataframe (à la Panda)</a>
-        <li><a href="https://github.com/xaliphostes/cdt-ts">2D Constrained Delaunay Triangulation</a>
-    </ul>
+        <section id="cpp-libs" class="mb-12">
+            <h2 class="text-3xl font-bold mb-4">Libraries in C++</h2>
+            <ul class="list-disc pl-5">
+                <li><a href="https://github.com/xaliphostes/dataframe" class="text-blue-600 hover:underline">Dataframe (à la Panda)</a></li>
+                <li><a href="https://github.com/xaliphostes/cdt-ts" class="text-blue-600 hover:underline">2D Constrained Delaunay Triangulation</a></li>
+            </ul>
+        </section>
 
-    <h2>Games (Ts or Js)</h2>
-    <ul>
-        <li><a href="https://xaliphostes.github.io/defend-or-die-pioupiou/">Defend or die</a>
-    </ul>
+        <section id="games" class="mb-12">
+            <h2 class="text-3xl font-bold mb-4">Games (Ts or Js)</h2>
+            <ul class="list-disc pl-5">
+                <li><a href="https://xaliphostes.github.io/defend-or-die-pioupiou/" class="text-blue-600 hover:underline">Defend or die</a></li>
+            </ul>
+        </section>
 
-    <h2><a href="https://gist.github.com/xaliphostes">Several gists</a></h2>
-    <ul>
-        <li><a href="https://gist.github.com/xaliphostes/009cc1d79b6ece0f9bf8345279428c26">SetView() using TWEEN</a>
-        <li><a href="https://gist.github.com/xaliphostes/0509570267ad81339b47fac42a0a2df9">Tagged Template literal in ES6</a>
-        <li><a href="https://gist.github.com/xaliphostes/e22638dc169c0cff7f238a36fef5c65b">async-await</a>
-        <li><a href="https://gist.github.com/xaliphostes/f7994b95cac7b55fd59ae1cf8312ee75">async-await promise</a>
-        <li><a href="https://gist.github.com/xaliphostes/f551857ff9be5254d4f015277cee0300">Factory of functions</a>
-        <li><a href="https://gist.github.com/xaliphostes/d18012f3bc0f9fc9fdf5f9872edac65e">Factory of objects</a>
-        <li><a href="https://gist.github.com/xaliphostes/b6c3fe9174ba17b839b87af7898df30e">Create object</a>
-        <li><a href="https://gist.github.com/xaliphostes/140b69b2262451be9f2cab75984441b7">Zip arrays</a>
-        <li><a href="https://gist.github.com/xaliphostes/6da8287de9675232bc98abfa19250d1a">forEach on Array</a>
-        <li><a href="https://gist.github.com/xaliphostes/b992cabefbf8601aa817d473b825f34c">Reproducing Rxjs behavior</a>
-        <li><a href="https://gist.github.com/xaliphostes/6869989fadfb055ea40c2987b1150549">Multi-threaded C++ libs with emscripten</a>
-    </ul>
+        <section id="gists" class="mb-12">
+            <h2 class="text-3xl font-bold mb-4"><a href="https://gist.github.com/xaliphostes" class="text-blue-600 hover:underline">Several Gists</a></h2>
+            <ul class="list-disc pl-5">
+                <li><a href="https://gist.github.com/xaliphostes/009cc1d79b6ece0f9bf8345279428c26" class="text-blue-600 hover:underline">SetView() using TWEEN</a></li>
+                <li><a href="https://gist.github.com/xaliphostes/0509570267ad81339b47fac42a0a2df9" class="text-blue-600 hover:underline">Tagged Template literal in ES6</a></li>
+                <li><a href="https://gist.github.com/xaliphostes/e22638dc169c0cff7f238a36fef5c65b" class="text-blue-600 hover:underline">async-await</a></li>
+                <li><a href="https://gist.github.com/xaliphostes/f7994b95cac7b55fd59ae1cf8312ee75" class="text-blue-600 hover:underline">async-await promise</a></li>
+                <li><a href="https://gist.github.com/xaliphostes/f551857ff9be5254d4f015277cee0300" class="text-blue-600 hover:underline">Factory of functions</a></li>
+                <li><a href="https://gist.github.com/xaliphostes/d18012f3bc0f9fc9fdf5f9872edac65e" class="text-blue-600 hover:underline">Factory of objects</a></li>
+                <li><a href="https://gist.github.com/xaliphostes/b6c3fe9174ba17b839b87af7898df30e" class="text-blue-600 hover:underline">Create object</a></li>
+                <li><a href="https://gist.github.com/xaliphostes/140b69b2262451be9f2cab75984441b7" class="text-blue-600 hover:underline">Zip arrays</a></li>
+                <li><a href="https://gist.github.com/xaliphostes/6da8287de9675232bc98abfa19250d1a" class="text-blue-600 hover:underline">forEach on Array</a></li>
+                <li><a href="https://gist.github.com/xaliphostes/b992cabefbf8601aa817d473b825f34c" class="text-blue-600 hover:underline">Reproducing Rxjs behavior</a></li>
+                <li><a href="https://gist.github.com/xaliphostes/6869989fadfb055ea40c2987b1150549" class="text-blue-600 hover:underline">Multi-threaded C++ libs with emscripten</a></li>
+            </ul>
+        </section>
+    </main>
 
+    <footer class="bg-gray-800 text-white py-4">
+        <div class="container mx-auto px-4 text-center">
+            <p>&copy; 2024 Xaliphostes. All rights reserved.</p>
+        </div>
+    </footer>
 </body>
-
 </html>
