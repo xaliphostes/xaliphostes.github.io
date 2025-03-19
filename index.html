@@ -1,22 +1,40 @@
+<!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Xaliphostes</title>
-    <link rel="stylesheet" href="styles.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/tailwindcss/2.2.19/tailwind.min.js"></script>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap');
+        body {
+            font-family: 'Poppins', sans-serif;
+            background-color: #aaaaaa;
+            color: #000000;
+        }
+    </style>
 </head>
+<body class="bg-gray-100">
+    <header class="bg-blue-600 text-white py-6">
+        <div class="container mx-auto px-4 text-center">
+            <h1 class="text-4xl font-bold">Xaliphostes</h1>
+            <p class="text-xl mt-2">Polyglot-Developer, Scientist, Architect, Optimizer, Inventor, Geophysicist</p>
+        </div>
+    </header>
 
 <body>
     <div class="pheader" style="text-align:center">
-        <h1>Xaliphostes page Under construction!</h1>
+        <h1>Under construction!</h1>
     </div>
 
-    <h2>Point cloud visualization</h2>
-    <ul>
-        <li><a href="https://xaliphostes.github.io/chandelle-escalette/">Chandelle - Pas de l'Escalette</a>
-        <li><a href="https://xaliphostes.github.io/petit-salon/">Petit salon</a>
-    </ul>
+    <main class="container mx-auto px-4 py-8">
+        <section id="point-cloud" class="mb-12">
+            <h2 class="text-3xl font-bold mb-4">Point Cloud Visualization</h2>
+            <ul class="list-disc pl-5">
+                <li><a href="https://xaliphostes.github.io/chandelle-escalette/" class="text-blue-600 hover:underline">Chandelle - Pas de l'Escalette</a></li>
+                <li><a href="https://xaliphostes.github.io/petit-salon/" class="text-blue-600 hover:underline">Petit salon</a></li>
+            </ul>
+        </section>
 
     <h2>Science/Math libs (Ts or Js)</h2>
     <ul>
@@ -37,21 +55,25 @@
         <li><a href="https://github.com/xaliphostes/cdt-ts">2D Constrained Delaunay Triangulation</a>
     </ul>
 
-    <h2>Science/Math apps (Ts or Js)</h2>
-    <ul>
-        <li><a href="https://xaliphostes.github.io/rose-diagram/">Rose diagram</a>
-        <li><a href="https://xaliphostes.github.io/arch-app/">Arch webapp (geomeca)</a>
-        <li><a href="https://xaliphostes.github.io/tecto-stress/">Tecto Stress (stress inversion)</a>
-        <li><a href="https://xaliphostes.github.io/course-harmonic-diffusion/">Harnomic diffusion</a>
-        <li><a href="https://xaliphostes.github.io/course-heat-diffusion/">Constrained heat diffusion</a>
-        <li><a href="https://xaliphostes.github.io/course-01/">Symbolic derivatives</a>
-    </ul>
+        <section id="science-math-apps" class="mb-12">
+            <h2 class="text-3xl font-bold mb-4">Science/Math Applications (Ts or Js)</h2>
+            <ul class="list-disc pl-5">
+                <li><a href="https://xaliphostes.github.io/rose-diagram/" class="text-blue-600 hover:underline">Rose diagram</a></li>
+                <li><a href="https://xaliphostes.github.io/arch-app/" class="text-blue-600 hover:underline">Arch webapp (geomeca)</a></li>
+                <li><a href="https://xaliphostes.github.io/tecto-stress/" class="text-blue-600 hover:underline">Tecto Stress (stress inversion)</a></li>
+                <li><a href="https://xaliphostes.github.io/course-harmonic-diffusion/" class="text-blue-600 hover:underline">Harmonic diffusion</a></li>
+                <li><a href="https://xaliphostes.github.io/course-heat-diffusion/" class="text-blue-600 hover:underline">Constrained heat diffusion</a></li>
+                <li><a href="https://xaliphostes.github.io/course-01/" class="text-blue-600 hover:underline">Symbolic derivatives</a></li>
+            </ul>
+        </section>
 
-    <h2>Doc</h2>
-    <ul>
-        <li><a href="https://github.com/youwol/arch-doc">Arch (3D Boundary Element Method)</a>
-        <li><a href="https://github.com/youwol/cassini-doc">Cassini (2D/3D Finite Element Method)</a>
-    </ul>
+        <section id="documentation" class="mb-12">
+            <h2 class="text-3xl font-bold mb-4">Documentation</h2>
+            <ul class="list-disc pl-5">
+                <li><a href="https://github.com/youwol/arch-doc" class="text-blue-600 hover:underline">Arch (3D Boundary Element Method)</a></li>
+                <li><a href="https://github.com/youwol/cassini-doc" class="text-blue-600 hover:underline">Cassini (2D/3D Finite Element Method)</a></li>
+            </ul>
+        </section>
 
     <h2>Libs in C++</h2>
     <ul>
@@ -59,10 +81,12 @@
         <li><a href="https://github.com/xaliphostes/task">Task</a>
     </ul>
 
-    <h2>Games (Ts or Js)</h2>
-    <ul>
-        <li><a href="https://xaliphostes.github.io/defend-or-die-pioupiou/">Defend or die</a>
-    </ul>
+        <section id="games" class="mb-12">
+            <h2 class="text-3xl font-bold mb-4">Games (Ts or Js)</h2>
+            <ul class="list-disc pl-5">
+                <li><a href="https://xaliphostes.github.io/defend-or-die-pioupiou/" class="text-blue-600 hover:underline">Defend or die</a></li>
+            </ul>
+        </section>
 
     <h2><a href="https://gist.github.com/xaliphostes">Several gists</a></h2>
     <ul>
@@ -81,6 +105,10 @@
                 emscripten</a>
     </ul>
 
+    <footer class="bg-gray-800 text-white py-4">
+        <div class="container mx-auto px-4 text-center">
+            <p>&copy; 2024 Xaliphostes. All rights reserved.</p>
+        </div>
+    </footer>
 </body>
-
 </html>
